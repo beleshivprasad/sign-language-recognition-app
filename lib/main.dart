@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatefulWidget {
   @override
+  final String context = '';
   _HomePageState createState() => _HomePageState();
 }
 
@@ -114,13 +115,13 @@ class _HomePageState extends State<HomePage> {
               pageTitle = "Dictionary";
             } else if (id == 4) {
               currentPage = DrawerSections.contacts;
-              pageTitle = "Abouts";
+              pageTitle = "Contacts";
             } else if (id == 5) {
               currentPage = DrawerSections.about;
-              pageTitle = "Dashboard";
+              pageTitle = "About Us";
             } else if (id == 6) {
               currentPage = DrawerSections.send_feedback;
-              pageTitle = "Dashboard";
+              pageTitle = "Send Feedback";
             }
           });
         },

@@ -8,9 +8,22 @@ class signRecognitionPage extends StatefulWidget {
 class _signRecognitionPageState extends State<signRecognitionPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const Center(
-        child: Text("Settings Page"),
+    return Scaffold(
+      body: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Colors.white,
+              Colors.lightGreen.shade100,
+            ],
+          )),
+          child: Center(child: Text("Start Recongtion"))),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => {},
+        child: Icon(Icons.camera_alt_outlined),
+        backgroundColor: Colors.green,
       ),
     );
   }
